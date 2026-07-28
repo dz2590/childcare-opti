@@ -16,7 +16,7 @@ Both optimization models achieved a reported **100% desert-elimination rate** fo
 > **Course environment note:** This project was developed for Columbia University's IEOR 4004 Optimization Models and Methods course. The notebooks were originally run in Google Colab and use Gurobi. Reproducing the full workflow requires a valid Gurobi license and the included source datasets.
 
 ## Repository Structure
-
+```text
 ├── README.md
 ├── code/
 │   ├── Data Cleaning Part 1.ipynb
