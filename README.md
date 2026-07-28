@@ -17,36 +17,48 @@ Both optimization models achieved a reported **100% desert-elimination rate** fo
 
 ## Repository Structure
 
-```text
-.
-├── Data Cleaning Part 1.ipynb
-├── Optimization_Budgeting_Problem1.ipynb
-├── Optimization_Budgeting_Problem2.ipynb
+├── README.md
+├── code/
+│   ├── Data Cleaning Part 1.ipynb
+│   ├── Optimization_Budgeting_Problem1.ipynb
+│   └── Optimization_Budgeting_Problem2.ipynb
+├── data/
+│   ├── raw/
+│   │   ├── Public Data - Population By Age Group.xls
+│   │   ├── Commercial Zipcodes.csv
+│   │   ├── child_care_regulated.csv
+│   │   ├── NYC Public Database - Child_Care_Regulated_Programs_20251005.csv
+│   │   ├── avg_individual_income.csv
+│   │   ├── employment_rate.csv
+│   │   ├── population.csv
+│   │   └── potential_locations.csv
+│   └── processed/
+│       └── Childcare Deserts FINAL.csv
+├── results/
+│   ├── optimization_result_problem1_final.csv
+│   └── optimization_result_problem2_fin.csv
 ├── 4004_FinalReport.pdf
-├── Childcare Deserts FINAL.csv
-├── child_care_regulated.csv
-├── potential_locations.csv
-├── Commercial Zipcodes.csv
-├── Public Data - Population By Age Group.xls
-├── NYC Public Database - Child_Care_Regulated_Programs_20251005.csv
-├── avg_individual_income.csv
-├── employment_rate.csv
-├── population.csv
-├── optimization_result_problem1_final.csv
-├── optimization_result_problem2_fin.csv
-└── README.md
+└── 
 ```
+
+This organization separates the workflow into:
+
+- `code/` for the data-cleaning and optimization notebooks
+- `data/raw/` for original source files
+- `data/processed/` for the cleaned modeling dataset
+- `results/` for optimization outputs
+
 ## File Descriptions
 
-### `Data Cleaning Part 1.ipynb`
+### `code/Data Cleaning Part 1.ipynb`
 
 Builds the final analysis-ready child care desert dataset by cleaning, merging, imputing, and transforming the source data.
 
-### `Optimization_Budgeting_Problem1.ipynb`
+### `code/Optimization_Budgeting_Problem1.ipynb`
 
 Implements the baseline mixed-integer budgeting model for facility construction and expansion.
 
-### `Optimization_Budgeting_Problem2.ipynb`
+### `code/Optimization_Budgeting_Problem2.ipynb`
 
 Implements the realistic model with:
 
@@ -55,11 +67,11 @@ Implements the realistic model with:
 - geographic conflict detection, and
 - ZIP-code-level limits on feasible new facilities.
 
-### `optimization_result_problem1_final.csv`
+### `results/optimization_result_problem1_final.csv`
 
 Contains ZIP-code-level decisions and cost results from Model 1.
 
-### `optimization_result_problem2_fin.csv`
+### `results/optimization_result_problem2_fin.csv`
 
 Contains ZIP-code-level decisions and cost results from Model 2.
 
